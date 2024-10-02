@@ -5,7 +5,7 @@
 //----------{Backend - [Mongo, Express, Node]}
 
 // {Create a Server === Express}
-//npm install express, dotenv
+//npm install express dotenv, nodemon, cors, mongoose
 // .env .gitignore
 
 
@@ -25,12 +25,15 @@
 
 //{Create Routes}
     //HTTP methods [GET,POST, PUT, DELETE]
-
-
-
-
-
+    //Linked HTTPS to CRUD routes
+    //app.use(cors)
 
 
 
 // -------{Frontend - [React]}
+
+//APP.JS
+
+//AAU ---> FETCH NOTES FROM DB AND ADD TO Dashboard(mainpage)
+
+// ADDED A proxy request to front end 

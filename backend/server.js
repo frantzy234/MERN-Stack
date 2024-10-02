@@ -1,4 +1,5 @@
 require('dotenv').config()
+const cors = require("cors")
 const express = require('express')
 const app = express()
 const PORT = process.env.PORT || 3000
@@ -10,6 +11,12 @@ const notesController = require('./controllers/notesController')
 
 app.use(express.json())
 
+app.use(cors({
+    origin:true,
+    credentials: true
+}))
+
+// CORS: CrossOriginResourceSharing
 
 
 // ---> [Routes (HTTP)=> GET POST PATCH DELETE]
